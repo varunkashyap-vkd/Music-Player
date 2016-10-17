@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<div id = "audioDisplay">	Detected : Nothing	</div>
+	<div id = "container">
+
+		<div id = "currentlyPlaying">	None available 	</div>
+		<audio controls = "controls" id = "player">
+			<source src = "" type = "audio/mp3" />
+		</audio>
+
+		<div id = "info" class = "infoBox">
+			1. "Play-Song Name" to search and play a song.
+			<br>
+			2. "Stop/Resume" to stop/resume a song.
+			<br>
+			3. "Remove-Song Name" to remove a song once it has been added to the list.
+			<br>
+			4. "Next song/Previous song" to play next/previous song from the list.
+			<br>
+			5. "Reset" to remove all the songs from the list.
+		</div>
+
+		<div id = "heading">	List :-	</div>
+		<ul id = "listOfSongs">	
+		</ul>
+
+	</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.js">	</script>
+<script type = "text/javascript" src = "js/jsfile.js">		</script>
+<script type = "text/javascript" src = "js/code.js">		</script>
+
+<script type = "text/javascript">
+	var obj = {
+		currentlyPlaying : 'currentlyPlaying',
+		listOfSongs : 'listOfSongs',
+		player : 'player',
+		heading : 'heading',
+		currentlyPlaying : 'currentlyPlaying',
+		info : 'info',
+		displayBox : 'audioDisplay',
+	};
+
+	speech.init(obj);
+
+
+</script>
+
+
+</html>
